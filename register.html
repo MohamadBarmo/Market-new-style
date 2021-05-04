@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market</title>
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="shortcut icon">
+  <!-- PLUGINS CSS STYLE -->
+  <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" style="font-family: 'Cairo';">
+
+
+<nav class="sticky-top" style="background-color: #FFF;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo1.png" height="48" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="category.html">المنتجات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="category.html">الخدمات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="companies.html">الشركات</a>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									مساعدة <span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu" dir="rtl">
+									<a class="dropdown-item" href="">شركات</a>
+									<a class="dropdown-item" href="">زائرين</a>
+									<a class="dropdown-item" href="">إبلاغ عن إساءة</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact-us.html">اتصل بنا</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">من نحن</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav mr-auto mt-10">
+							<li class="nav-item">
+								<a class="nav-link login-button" href="register.html">تسجيل</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link login-button" href="login.html">دخول</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav mr-2 mt-10">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>البلد</option>
+								<option value="0">السعودية</option>
+								<option value="1">سوريا</option>
+								<option value="2">مصر</option>
+								<option value="3">الامارات</option>
+							</select>
+						</ul>
+						<ul class="navbar-nav mr-2 mt-10">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>المدينة</option>
+								<option value="1"> </option>
+							</select>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+<section class="login py-5 border-top-1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8 align-item-center">
+                    <div class="border border">
+                        <h3 class="bg-gray p-4">سجل الآن</h3>
+                        <form action="#">
+                            <fieldset class="p-4">
+                                <input type="email" placeholder="اسم المستخدم" class="border p-3 w-100 my-2">
+                                <input type="email" placeholder="البريد الالكتروني" class="border p-3 w-100 my-2">
+                                <input type="password" placeholder="كلمة المرور" class="border p-3 w-100 my-2">
+                                <input type="password" placeholder="تأكيد كلمة المرور" class="border p-3 w-100 my-2">
+                                <select class="form-select border w-50 my-2 text-right">
+                                  <option selected>زبون</option>
+                                  <option value="0">عارض</option>
+                                </select>
+                                <select class="form-select border w-50 my-2 content-align-right">
+                                  <option class="text-right" selected>نوع الاشتراك</option>
+                                  <option value="0">اشتراك أول</option>
+                                  <option value="0">اشتراك ثاني</option>
+                                  <option value="0">اشتراك ثالث</option>
+                                </select>
+                                <div class="loggedin-forgot d-inline-flex my-3">
+                                        <input type="checkbox" id="registering" class="mt-1">
+                                        <label for="registering" class="px-2">عند تسجيلك, أنت توافق على الشروط والأحكام <a class="text-primary font-weight-bold" href="terms-condition.html">الشروط & الاحكام</a></label>
+                                </div>
+                                <button type="submit" class="d-block py-3 px-4 bg-primary text-white border-0 rounded font-weight-bold">تسجيل</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--============================
+=            Footer            =
+=============================-->
+
+
+<footer class="footer section section-sm" id="about">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about ">
+          <!-- footer logo 
+          <img src="images/logo1.png" height="100" alt="">
+		  -->
+          <!-- description -->
+		  <h1 class="alt-color">عن الشركة</h1>
+          <p class="alt-color">
+		  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا
+		  </p>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 offset-lg-1 col-md-3 ">
+        <div class="block">
+          <h4>الصفحات</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الشركات</a></li>
+			<li><a href="#">المنتجات</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+			<li><a href="#">من نحن</a></li>
+          </ul>
+        </div>
+      </div>
+         
+    </div>
+  </div>
+  <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-12">
+        <!-- Copyright -->
+        <div class="copyright text-center">
+        	<p>جميع الحقوق محفوظة ©<script>
+				var CurrentYear = new Date().getFullYear()
+				document.write(CurrentYear)
+				</script>
+			</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <!-- Social Icons -->
+        <ul class="social-media-icons ">
+          <li><a class="fa fa-facebook" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-pinterest-p" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-vimeo" href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+  <!-- To Top -->
+  <div class="top-to">
+    <a id="top" class="" href="#"><i class="fa fa-angle-up"></i></a>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPTS -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/popper.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+<script src="plugins/tether/js/tether.min.js"></script>
+<script src="plugins/raty/jquery.raty-fa.js"></script>
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

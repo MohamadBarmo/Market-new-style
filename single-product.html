@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market</title>
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="shortcut icon">
+  <!-- PLUGINS CSS STYLE -->
+  <!-- <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"> -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" style="font-family: 'Cairo';">
+
+
+<nav class="sticky-top" style="background-color: #FFF;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo1.png" height="48" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="category.html">المنتجات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="category.html">الخدمات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="companies.html">الشركات</a>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									مساعدة <span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu" dir="rtl">
+									<a class="dropdown-item" href="">شركات</a>
+									<a class="dropdown-item" href="">زائرين</a>
+									<a class="dropdown-item" href="">إبلاغ عن إساءة</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact-us.html">اتصل بنا</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">من نحن</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav mr-auto mt-10">
+							<li class="nav-item">
+								<a class="nav-link login-button" href="register.html">تسجيل</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link login-button" href="login.html">دخول</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav mr-2 mt-10">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>البلد</option>
+								<option value="0">السعودية</option>
+								<option value="1">سوريا</option>
+								<option value="2">مصر</option>
+								<option value="3">الامارات</option>
+							</select>
+						</ul>
+						<ul class="navbar-nav mr-2 mt-10">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>المدينة</option>
+								<option value="1"> </option>
+							</select>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+
+<!--===================================
+=            Store Section            =
+====================================-->
+<section class="section bg-gray">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<!-- Left sidebar -->
+			<div class="col-md-8">
+				<div class="product-details">
+					<h1 class="product-title">
+						لوريم ايبسوم
+					</h1>
+					<div class="product-meta">
+						<ul class="list-inline">
+							<li class="list-inline-item"><i class="fa fa-user-o"></i> الناشر: <a href="">لوريم ايبسوم</a></li>
+							<li class="list-inline-item"><i class="fa fa-folder-open-o"></i> الصنف: <a href="">الكترونيات</a></li>
+							<li class="list-inline-item"><i class="fa fa-location-arrow"></i> الموقع: <a href="">لوريم ايبسوم</a></li>
+						</ul>
+					</div>
+
+					<!-- product slider -->
+					<div class="product-slider" dir="ltr">
+						<div class="product-slider-item my-4" data-image="images/products/products-1.jpg">
+							<img class="img-fluid w-100" src="images/products/products-1.jpg" alt="product-img">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-2.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-2.jpg" alt="Second slide">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-3.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-3.jpg" alt="Third slide">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-1.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-1.jpg" alt="Third slide">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-2.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-2.jpg" alt="Third slide">
+						</div>
+					</div>
+					<!-- product slider -->
+
+					<div class="content mt-5 pt-5">
+						<ul class="nav nav-pills  justify-content-center" id="pills-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+								 aria-selected="true">تفاصيل</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+								 aria-selected="false">الآراء</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<h3 class="tab-title">تفاصيل المنتج</h3>
+								<p>
+									لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم
+								</p>
+
+								
+								<table class="table table-bordered product-table">
+									<tbody>
+										<tr>
+											<td>الشركة</td>
+											<td>لوريم ايبسوم</td>
+										</tr>
+										<tr>
+											<td>السعر</td>
+											<td>$450</td>
+										</tr>
+										<tr>
+											<td>تاريخ الاضافة</td>
+											<td>26th December</td>
+										</tr>
+										<tr>
+											<td>الحالة</td>
+											<td>متوفر</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+								<h3 class="tab-title">آراء الزبائن</h3>
+								<div class="product-review">
+									<div class="media">
+										<!-- Avater -->
+										<img src="images/user/user-thumb.jpg" alt="avater">
+										<div class="media-body">
+											<!-- Ratings -->
+											<div class="ratings">
+												<ul class="list-inline">
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+												</ul>
+											</div>
+											<div class="name">
+												<h5>لوريم ايبسوم</h5>
+											</div>
+											<div class="date">
+												<p>Mar 20, 2018</p>
+											</div>
+											<!--<div class="review-comment">
+												<p>
+													لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم
+												</p>
+											</div>-->
+										</div>
+									</div>
+									<div class="review-submission">
+										<h3 class="tab-title">رأيك</h3>
+										<!-- Rate -->
+										<div class="rate">
+											<div class="starrr"></div>
+										</div>
+										<div class="review-submit">
+											<form action="#" class="row">
+												<!--<div class="col-lg-6">
+													<input type="text" name="name" id="name" class="form-control" placeholder="Name">
+												</div>
+												<div class="col-lg-6">
+													<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+												</div>
+												<div class="col-12">
+													<textarea name="review" id="review" rows="10" class="form-control" placeholder="Message"></textarea>
+												</div>-->
+												<div class="col-12">
+													<button type="submit" class="btn btn-main">ارسال</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="sidebar">
+					<!-- User Profile widget -->
+					<div class="widget user text-center">
+						<img class="rounded-circle img-fluid mb-5 px-5" src="images/user/user-thumb.jpg" alt="">
+						<h4><a href="company.html">لوريم ايبسوم</a></h4>
+						<p class="member-time">عضو من تاريخ: Jun 27, 2017</p>
+						<a href="company.html">استعراض الشركة</a>
+						<ul class="list-inline mt-20">
+							<li class="list-inline-item"><a href="company.html" class="btn btn-contact d-inline-block  btn-primary px-lg-5 my-1 px-md-3">تواصل</a></li>
+						</ul>
+					</div>				
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+<!--============================
+=            Footer            =
+=============================-->
+
+
+<footer class="footer section section-sm" id="about">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about ">
+          <!-- footer logo 
+          <img src="images/logo1.png" height="100" alt="">
+		  -->
+          <!-- description -->
+		  <h1 class="alt-color">عن الشركة</h1>
+          <p class="alt-color">
+		  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا
+		  </p>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 offset-lg-1 col-md-3 ">
+        <div class="block">
+          <h4>الصفحات</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الشركات</a></li>
+			<li><a href="#">المنتجات</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+			<li><a href="#">من نحن</a></li>
+          </ul>
+        </div>
+      </div>
+         
+    </div>
+  </div>
+  <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-12">
+        <!-- Copyright -->
+        <div class="copyright text-center">
+        	<p>جميع الحقوق محفوظة ©<script>
+				var CurrentYear = new Date().getFullYear()
+				document.write(CurrentYear)
+				</script>
+			</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <!-- Social Icons -->
+        <ul class="social-media-icons ">
+          <li><a class="fa fa-facebook" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-pinterest-p" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-vimeo" href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+  <!-- To Top -->
+  <div class="top-to">
+    <a id="top" class="" href="#"><i class="fa fa-angle-up"></i></a>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPTS -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/popper.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+<script src="plugins/tether/js/tether.min.js"></script>
+<script src="plugins/raty/jquery.raty-fa.js"></script>
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Market</title>
+
+	<!-- FAVICON -->
+	<link href="img/favicon.png" rel="shortcut icon">
+	<!-- PLUGINS CSS STYLE -->
+	<link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
+	<!-- Font Awesome -->
+	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Owl Carousel -->
+	<link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+	<link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+	<!-- Fancy Box -->
+	<link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+	<link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.css"/>
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" style="font-family: 'Cairo';">
+
+<nav class="sticky-top" style="background-color: #FFF;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo1.png" height="48" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="category.html">المنتجات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="category.html">الخدمات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="companies.html">الشركات</a>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									مساعدة <span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu" dir="rtl">
+									<a class="dropdown-item" href="">شركات</a>
+									<a class="dropdown-item" href="">زائرين</a>
+									<a class="dropdown-item" href="">إبلاغ عن إساءة</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact-us.html">اتصل بنا</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">من نحن</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav mr-auto mt-10">
+							<li class="nav-item">
+								<a class="nav-link login-button" href="login.html">تسجيل</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link login-button" href="login.html">دخول</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav mr-2 mt-10">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>البلد</option>
+								<option value="0">السعودية</option>
+								<option value="1">سوريا</option>
+								<option value="2">مصر</option>
+								<option value="3">الامارات</option>
+							</select>
+						</ul>
+						<ul class="navbar-nav mr-2 mt-10">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+								<option selected>المدينة</option>
+								<option value="1"> </option>
+							</select>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+<section class="page-search">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Advance Search -->
+				<div class="advance-search">
+					<form>
+						<div class="form-row pb-4">
+							<div class="form-group col-md-10">
+								<input type="text" class="form-control my-2 my-lg-0"  id="inputtext4" placeholder="عن ماذا تبحث">
+							</div>
+							
+							<div class="form-group col-md-2">
+								<button type="submit" class="btn btn-light w-100">بحث</button>
+							</div>
+						</div>
+						<div class="form-row pb-4">
+							<div class="form-group col-md-2">
+								<select class="form-control my-2 my-lg-0 w-100">
+									<option value="1">منتجات</option>
+									<option value="2">خدمات</option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<select class="form-control my-2 my-lg-0 w-100">
+									<option>الشركات</option>
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<select class="form-control my-2 my-lg-0 w-100">
+									<option>الصنف</option>
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<select class="form-control my-2 my-lg-0 w-100">
+									<option>الصنف الفرعي</option>
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<select class="form-control my-2 my-lg-0 w-100">
+									<option>البلد</option>
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<select class="form-control my-2 my-lg-0 w-100">
+									<option>المدينة</option>
+									<option value=""></option>
+								</select>
+							</div>
+							
+						</div>
+						<!--<div class="d-flex justify-content-center">
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<button type="submit" class="btn btn-light">ابحث</button>
+								</div>
+							</div>
+						</div>-->
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search-result bg-gray">
+					<h2>نتيجة البحث عن: الالكترونيات</h2>
+					<p>123 نتيجة</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="category-sidebar">
+
+					<div class="widget filter">
+						<h4 class="widget-header">عرض المنتجات</h4>
+						<select>
+							<option>اختر</option>
+							<option value="1">الأكير شهرة</option>
+							<option value="2">الأقل سعرا</option>
+							<option value="4">الأعلى سعرا</option>
+						</select>
+					</div>
+
+					<div class="widget price-range w-100">
+						<h4 class="widget-header">مجال السعر</h4>
+						<div class="block">
+									<input class="range-track w-100" type="text" data-slider-min="0" data-slider-max="5000000" data-slider-step="5"
+									data-slider-value="[0,5000000]">
+							<div class="d-flex justify-content-between mt-2">
+									<span class="value">10 - 5000000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				
+				<div class="ad-listing-list mt-20">
+					<div class="row p-lg-3 p-sm-5 p-4">
+						<div class="col-lg-4 align-self-center">
+							<a href="single-product.html">
+								<img src="images/products/products-1.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-6 col-md-10">
+									<div class="ad-listing-content">
+										<div>
+											<a href="single-product.html" class="font-weight-bold">لوريم ايبسوم</a>
+										</div>
+										<ul class="list-inline mt-2 mb-3">
+											<li class="list-inline-item"><a href="category.html"> <i class="fa fa-folder-open-o"></i> الصنف</a></li>
+											<li class="list-inline-item"><a href=""><i class="fa fa-calendar"></i>26th December</a></li>
+										</ul>
+										<p class="pr-5">لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم</p>
+									</div>
+								</div>
+								<div class="col-lg-6 align-self-center">
+									<div class="product-ratings float-lg-right pb-3">
+										<ul class="list-inline">
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ad-listing-list mt-20">
+					<div class="row p-lg-3 p-sm-5 p-4">
+						<div class="col-lg-4 align-self-center">
+							<a href="single-product.html">
+								<img src="images/products/products-1.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-6 col-md-10">
+									<div class="ad-listing-content">
+										<div>
+											<a href="single-product.html" class="font-weight-bold">لوريم ايبسوم</a>
+										</div>
+										<ul class="list-inline mt-2 mb-3">
+											<li class="list-inline-item"><a href="category.html"> <i class="fa fa-folder-open-o"></i> الصنف</a></li>
+											<li class="list-inline-item"><a href=""><i class="fa fa-calendar"></i>26th December</a></li>
+										</ul>
+										<p class="pr-5">لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم</p>
+									</div>
+								</div>
+								<div class="col-lg-6 align-self-center">
+									<div class="product-ratings float-lg-right pb-3">
+										<ul class="list-inline">
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ad-listing-list mt-20">
+					<div class="row p-lg-3 p-sm-5 p-4">
+						<div class="col-lg-4 align-self-center">
+							<a href="single-product.html">
+								<img src="images/products/products-1.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-6 col-md-10">
+									<div class="ad-listing-content">
+										<div>
+											<a href="single-product.html" class="font-weight-bold">لوريم ايبسوم</a>
+										</div>
+										<ul class="list-inline mt-2 mb-3">
+											<li class="list-inline-item"><a href="category.html"> <i class="fa fa-folder-open-o"></i> الصنف</a></li>
+											<li class="list-inline-item"><a href=""><i class="fa fa-calendar"></i>26th December</a></li>
+										</ul>
+										<p class="pr-5">لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم</p>
+									</div>
+								</div>
+								<div class="col-lg-6 align-self-center">
+									<div class="product-ratings float-lg-right pb-3">
+										<ul class="list-inline">
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ad-listing-list mt-20">
+					<div class="row p-lg-3 p-sm-5 p-4">
+						<div class="col-lg-4 align-self-center">
+							<a href="single-product.html">
+								<img src="images/products/products-1.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-6 col-md-10">
+									<div class="ad-listing-content">
+										<div>
+											<a href="single-product.html" class="font-weight-bold">لوريم ايبسوم</a>
+										</div>
+										<ul class="list-inline mt-2 mb-3">
+											<li class="list-inline-item"><a href="category.html"> <i class="fa fa-folder-open-o"></i> الصنف</a></li>
+											<li class="list-inline-item"><a href=""><i class="fa fa-calendar"></i>26th December</a></li>
+										</ul>
+										<p class="pr-5">لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم لوريم ايبسوم</p>
+									</div>
+								</div>
+								<div class="col-lg-6 align-self-center">
+									<div class="product-ratings float-lg-right pb-3">
+										<ul class="list-inline">
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--============================
+=            Footer            =
+=============================-->
+
+
+<footer class="footer section section-sm" id="about">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about ">
+          <!-- footer logo 
+          <img src="images/logo1.png" height="100" alt="">
+		  -->
+          <!-- description -->
+		  <h1 class="alt-color">عن الشركة</h1>
+          <p class="alt-color">
+		  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا
+		  </p>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 offset-lg-1 col-md-3 ">
+        <div class="block">
+          <h4>الصفحات</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">الشركات</a></li>
+			<li><a href="#">المنتجات</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+			<li><a href="#">من نحن</a></li>
+          </ul>
+        </div>
+      </div>
+         
+    </div>
+  </div>
+  <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-12">
+        <!-- Copyright -->
+        <div class="copyright text-center">
+        	<p>جميع الحقوق محفوظة ©<script>
+				var CurrentYear = new Date().getFullYear()
+				document.write(CurrentYear)
+				</script>
+			</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <!-- Social Icons -->
+        <ul class="social-media-icons ">
+          <li><a class="fa fa-facebook" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-twitter" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-pinterest-p" href="#" target="_blank"></a></li>
+          <li><a class="fa fa-vimeo" href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+  <!-- To Top -->
+  <div class="top-to">
+    <a id="top" class="" href="#"><i class="fa fa-angle-up"></i></a>
+  </div>
+</footer>
+
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/popper.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+<script src="plugins/tether/js/tether.min.js"></script>
+<script src="plugins/raty/jquery.raty-fa.js"></script>
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.js"></script>
+
+<script src="js/script.js"></script>
+<script>
+	$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+</body>
+
+</html>
